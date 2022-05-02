@@ -7,20 +7,24 @@ function TextForm(props) {
     // console.log("Uppercase was clicked" + text);
     let newText = text.toUpperCase();
     setText(newText);
+    props.showAlert("Converted to Uppercase" , "success");
   }
 
   const handleLowClick = () =>{
     let newText = text.toLocaleLowerCase();
     setText(newText);
+    props.showAlert("Converted to Lowercase" , "success");
   }
   const handClear = () =>{
     let newText = ('');
     setText(newText);
+    props.showAlert("Cleared !, success");
   }
 
   const handleOnChange= (event) =>{
-    console.log("On Chnage");
+    // console.log("On Chnage");
     setText(event.target.value);
+  
   }
 
   const [text, setText] = useState(' ');
