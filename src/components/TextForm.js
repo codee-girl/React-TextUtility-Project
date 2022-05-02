@@ -18,7 +18,7 @@ function TextForm(props) {
   const handClear = () =>{
     let newText = ('');
     setText(newText);
-    props.showAlert("Cleared !, success");
+
   }
 
   const handleOnChange= (event) =>{
