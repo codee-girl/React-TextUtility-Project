@@ -14,6 +14,9 @@ function App() {
           msg: message,
           type: type
         });
+        setTimeout(() =>{
+          setAlert(null);
+        }, 1500);
   };
 
   const toggleMode = () =>{
@@ -42,3 +45,4 @@ function App() {
 }
 
 export default App;
+// hi i am comment
